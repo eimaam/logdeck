@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #3ECF8E;
+  --color-brand-primary-hover: #36B87E;
+  --color-brand-primary-active: #2EA56F;
+  --color-brand-primary-muted: #1A2E26;
+
+  --color-brand-accent: #006239;
+  --color-brand-accent-hover: #00552F;
+  --color-brand-accent-active: #004726;
+
+  --color-bg-base: #121212;
+  --color-bg-surface: #171717;
+  --color-bg-surface-hover: #1E1E1E;
+  --color-bg-surface-active: #242424;
+
+  --color-bg-muted: #242424;
+  --color-bg-subtle: #1A1A1A;
+  --color-bg-elevated: #1F1F1F;
+
+  --color-text-primary: #FAFAFA;
+  --color-text-secondary: #CFCFCF;
+  --color-text-muted: #898989;
+  --color-text-disabled: #5A5A5A;
+
+  --color-text-on-primary: #042014;
+
+  --color-border-default: #2A2A2A;
+  --color-border-muted: #1F1F1F;
+  --color-border-strong: #333333;
+  --color-border-primary: #3ECF8E;
+
+  --color-state-success: #3ECF8E;
+  --color-state-success-bg: #0F241B;
+
+  --color-state-error: #FF5C5C;
+  --color-state-error-bg: #2A1414;
+
+  --color-state-warning: #F5A524;
+  --color-state-warning-bg: #2A2112;
+
+  --color-state-info: #3B82F6;
+  --color-state-info-bg: #141E2A;
+
+  --color-interactive-default: #242424;
+  --color-interactive-hover: #2A2A2A;
+  --color-interactive-active: #333333;
+
+  --color-focus-ring: #3ECF8E;
+
+  --font-display: "Syne", sans-serif;
+  --font-code: "Source Code Pro", monospace;
+  --font-body: "Syne Mono", monospace;
+}
+
+.dark{
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-base);
+}
+
+.light{
+  color: #000;
+  background-color: var(--color-bg-surface);
+}
+
+:root {
+  font-family: var(--font-body);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit
+}
+
+a:hover {
+  color: inherit
+}
