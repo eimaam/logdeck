@@ -1,0 +1,23 @@
+{
+  "name": "logdeck",
+  "author": "Imam Dahir - eimaam.dev",
+  "version": "1.0.0",
+  "description": "A developer logging tool that sends logs directly to Telegram",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspaces --if-present",
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "zod": "^4.3.5"
+  }
+}
