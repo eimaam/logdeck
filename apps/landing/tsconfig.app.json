@@ -34,6 +34,10 @@
     }
   },
   "include": [
-    "src"
+    "src",
+    "../../packages/shared/src/utils/avatar.ts",
+    "../../packages/shared/src/utils/date.ts",
+    "../../packages/shared/src/utils/format.ts",
+    "../../packages/shared/src/components/404.tsx"
   ]
 }
