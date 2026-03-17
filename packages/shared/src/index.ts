@@ -4,17 +4,26 @@ import { z } from 'zod';
 export * from './types';
 export * from './constants';
 
-// auth schemas
-export const LoginSchema = z.object({
-  email: z.string().email(),
-});
+// UI Components
+export * from './components/ui/Button';
+export * from './components/ui/Card';
+export * from './components/ui/FadeIn';
+export * from './components/ui/Form';
+export * from './components/ui/FormElements';
+export * from './components/ui/Input';
+export * from './components/ui/Logo';
+export * from './components/ui/Modal';
+export * from './components/ui/MotionComponents';
+export * from './components/ui/ThemeToggle';
+export * from './components/ui/CounterBadge';
+export * from './components/ui/CustomMultiSelect';
+export * from './components/ui/Pagination';
+export * from './components/ui/Select';
+export * from '../../../apps/app/src/components/ui/UserAvatar';
 
-export const RegisterSchema = z.object({
-  fullName: z.string().min(2),
-  email: z.string().email(),
-  password: z.string().min(6),
-});
+// Pages/Layouts
+export { default as ErrorPage } from './components/404';
 
-export type LoginInput = z.infer<typeof LoginSchema>;
-export type RegisterInput = z.infer<typeof RegisterSchema>;
+// Utils
+export * from './utils/ui-utils';
 

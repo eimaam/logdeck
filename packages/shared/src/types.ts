@@ -11,59 +11,36 @@ export enum UserRoleEnum {
     ADMIN = "admin"
 }
 
-export enum UserStatusEnum {
-    ONLINE = "online",
-    IDLE = "idle",
-    OFFLINE = "offline"
-}
-
 // user
 export interface IUser {
-    _id: string;
+    id: number;
     email: string;
     fullName: string;
-    username: string;
-    displayName: string;
-    bio?: string;
-    avatarUrl?: string
-
+    avatarUrl?: string;
     role: UserRoleEnum;
-    status: UserStatusEnum,
-
-    lastSeenAt: Date;
     isOnboarded: boolean;
+    isOnline?: boolean;
     lastLoginAt: Date;
-
     createdAt: Date;
-    updatedAt: Date;
+    updatedAt?: Date;
 }
 
 // LogDeck Core Types
-
 export interface IProject {
-    id: string;
+    id: number;
     name: string;
     apiKey: string;
-    userId: string;
+    userId: number;
     createdAt: Date;
 }
 
 export interface ILogEntry {
-    id: string;
-    projectId: string;
+    id: number;
+    projectId: number;
     level: 'info' | 'error' | 'warn' | 'debug' | 'trace';
     message: string;
     metadata?: Record<string, any>;
     serviceName?: string;
     source?: string;
     createdAt: Date;
-}
-
-export interface IUser {
-    id: string;
-    email: string;
-    name: string;
-    role: UserRoleEnum;
-    createdAt: Date;
-    updatedAt: Date;
 }
