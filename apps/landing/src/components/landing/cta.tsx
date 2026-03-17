@@ -1,6 +1,6 @@
 import { Typography } from "antd";
-import { Button } from "../ui/Button";
-import { FadeIn } from "../ui/FadeIn";
+import { Button } from "@logdeck/shared";
+import { FadeIn } from "@logdeck/shared";
 import { APP_URL } from "@logdeck/shared";
 
 const { Title } = Typography;

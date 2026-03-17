@@ -1,5 +1,5 @@
 
-import { FadeIn, FadeInStagger, FadeInItem } from "../ui/FadeIn";
+import { FadeIn, FadeInStagger, FadeInItem } from "@logdeck/shared";
 import { Typography } from "antd";
 import PriceCard from "./price-card";
 

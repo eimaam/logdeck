@@ -1,7 +1,7 @@
 import React, { type FC } from 'react'
-import { FadeInStagger, FadeInItem } from '../ui/FadeIn'
-import { Card } from '../ui/Card'
-import { Button } from '../ui/Button'
+import { FadeInStagger, FadeInItem } from '@logdeck/shared'
+import { Card } from '@logdeck/shared'
+import { Button } from '@logdeck/shared'
 import { Check } from "lucide-react";
 
 

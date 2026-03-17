@@ -1,6 +1,6 @@
 import { Bell, Activity, Zap, type LucideIcon } from "lucide-react";
-import { Card } from "../ui/Card";
-import { FadeIn, FadeInItem, FadeInStagger } from "../ui/FadeIn";
+import { Card } from "@logdeck/shared";
+import { FadeIn, FadeInItem, FadeInStagger } from "@logdeck/shared";
 import { Typography } from "antd";
 
 const { Title } = Typography;

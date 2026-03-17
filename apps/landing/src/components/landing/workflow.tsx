@@ -1,6 +1,6 @@
 import { Typography } from "antd";
 import { Terminal, Bell } from "lucide-react";
-import { FadeIn } from "../ui/FadeIn";
+import { FadeIn } from "@logdeck/shared";
 
 const { Title } = Typography;
 

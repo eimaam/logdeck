@@ -1,6 +1,6 @@
-import { Button } from '@/components/ui/Button';
+import { Button } from '@logdeck/shared';
 import { Typography } from 'antd';
-import { FadeIn, FadeInItem, FadeInStagger } from '@/components/ui/FadeIn';
+import { FadeIn, FadeInItem, FadeInStagger } from '@logdeck/shared';
 import DemoCode from './demo-code';
 
 const { Title } = Typography;

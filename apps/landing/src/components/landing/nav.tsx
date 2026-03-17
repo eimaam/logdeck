@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom"
-import { Logo } from "../ui/Logo"
-import { Button } from "../ui/Button"
+import { Logo, Button } from "@logdeck/shared"
 import { APP_URL } from "@logdeck/shared"
 
 const Nav = () => {
