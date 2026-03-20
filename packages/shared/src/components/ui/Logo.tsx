@@ -1,4 +1,4 @@
-import logo from "../../assets/images/logo.png";
+// import logo from "../../assets/images/logo.png";
 
 interface LogoProps {
   className?: string;
@@ -17,7 +17,7 @@ export const Logo: React.FC<LogoProps> = ({ className, size = 'medium', withTitl
   className = className ? `${sizeClasses[size]} ${className}` : sizeClasses[size];
   return (
     <div className="flex items-center gap-2">
-      <img src={logo} alt="LogDeck logo" className={`${className}`} />
+      <img src={""} alt="LogDeck logo" className={`${className}`} />
       {withTitle && <h3 className="font-bold text-xl text-text-primary tracking-tight">LogDeck</h3>}
     </div>
   );

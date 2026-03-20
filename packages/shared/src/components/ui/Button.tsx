@@ -1,10 +1,10 @@
-import { cn } from "@/lib/utils";
 import { Button as AntButton } from "antd";
 import type { ButtonProps as AntButtonProps } from "antd";
 import { cva, type VariantProps } from "class-variance-authority";
 import React from 'react';
 import { forwardRef } from "react";
 import { motion } from 'motion/react';
+import { cn } from "../../lib/utils";
 
 const MotionAntButton = motion(AntButton) as any;
 

@@ -1,4 +1,5 @@
-const isBrowser = typeof window !== 'undefined';
+
+
 
 const getEnv = (key: string, defaultValue: string): string => {
     // Vite environment variables (prefixed with VITE_ for client-side)
