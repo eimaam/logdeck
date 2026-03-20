@@ -51,6 +51,7 @@ const useAuthStoreBase = create<AuthStore>()(
                         error: null
                     }
                     set(response)
+                    window.location.href = "/auth"
                 } catch (error) {
                     console.error("there was a problem logging out")
                 }
