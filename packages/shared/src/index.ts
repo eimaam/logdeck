@@ -19,7 +19,9 @@ export * from './components/ui/CounterBadge';
 export * from './components/ui/CustomMultiSelect';
 export * from './components/ui/Pagination';
 export * from './components/ui/Select';
-// export { default as UserAvatar } from '../../../apps/app/src/components/ui/UserAvatar';
+export * from './components/ui/StatCard';
+export * from './components/ui/Badge';
+export * from './components/ui/Table';
 
 // Pages/Layouts
 export { default as ErrorPage } from './components/404';

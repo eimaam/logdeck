@@ -11,9 +11,18 @@ export enum UserRoleEnum {
     ADMIN = "admin"
 }
 
+export enum StatusTypeEnum {
+    SUCCESS = 'success',
+    ERROR = 'error',
+    WARNING = 'warning',
+    INFO = 'info',
+    BRAND = 'brand',
+    CRITICAL = 'critical',
+}
+
 // user
 export interface IUser {
-    id: number;
+    id: string; // UUID
     email: string;
     fullName: string;
     avatarUrl?: string;
@@ -27,16 +36,16 @@ export interface IUser {
 
 // LogDeck Core Types
 export interface IProject {
-    id: number;
+    id: string; // UUID
     name: string;
     apiKey: string;
-    userId: number;
+    userId: string; // UUID
     createdAt: Date;
 }
 
 export interface ILogEntry {
-    id: number;
-    projectId: number;
+    id: string; // UUID
+    projectId: string; // UUID
     level: 'info' | 'error' | 'warn' | 'debug' | 'trace';
     message: string;
     metadata?: Record<string, any>;

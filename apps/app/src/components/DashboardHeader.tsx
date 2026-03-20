@@ -1,5 +1,5 @@
 import React from 'react';
-import { Bell, Search, LogOut, Settings, User } from 'lucide-react';
+import { LogOut, Settings, User } from 'lucide-react';
 import { Dropdown } from 'antd';
 import type { MenuProps } from 'antd';
 import UserAvatar from './ui/UserAvatar';
