@@ -1,8 +1,10 @@
 import { Context, Hono } from 'hono';
 import { logger as honoLogger } from 'hono/logger';
 import { cors } from 'hono/cors';
-import { errorMiddleware } from './middleware/error.middleware';
-import authRoutes from './routes/auth.routes';
+import { errorMiddleware } from '@/shared/middleware/error.middleware';
+import authRoutes from './features/auth/auth.routes';
+import projectRoutes from './features/projects/project.routes';
+import logRoutes from './features/logs/log.routes';
 
 const app = new Hono();
 
@@ -20,6 +22,8 @@ app.use("*", cors({
 
 // API Routes (v1)
 app.route('/api/v1/auth', authRoutes);
+app.route('/api/v1/projects', projectRoutes);
+app.route('/api/v1/logs', logRoutes);
 
 // Health check
 app.get('/health', (c: Context) => c.json({ status: 'ok', uptime: process.uptime() }));
